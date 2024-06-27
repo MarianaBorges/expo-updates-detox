@@ -6,6 +6,9 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "plugins": [
+      "@config-plugins/detox"
+    ],
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -15,16 +18,27 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.marianaborgesmt.detoxexpoupdates"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.marianaborgesmt.detoxexpoupdates"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "4cd3c9b6-c68a-43fc-bbe2-852a3bebabbc"
+      }
+    },
+    "runtimeVersion": "exposdk:48.0.0",
+    "updates": {
+      "url": "https://u.expo.dev/4cd3c9b6-c68a-43fc-bbe2-852a3bebabbc"
     }
   }
 }
